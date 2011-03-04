@@ -1,150 +1,52 @@
-/*
-Design by FlipDarius (http://flipdarius.googlepages.com)
-Released under a Creative Commons Attribution 2.5 License.
-You're legally free to use this for commercial form, but I'd askyou to send me an email (check my site) if you do this.
-*/
-
-*{
-margin:0;
-padding:0;}
-
-body{
-font-family:verdana, arial, helvetica, sans-serif;
-background:#fff;
-font-size:15px;}
-
-#page{
-padding:20px 0 20px 0;
-margin:auto;
-width:810px;}
-
-a:link{
-outline:none;
-text-decoration:none;
-color:#32CD32;}
-
-a:hover, a:active{
-background:#fff;
-color:#008000 !important;
-outline:none;
-text-decoration:none;}
-
-#content ul{
-padding:5px 5px 5px 25px;}
-
-#content li{
-padding:5px;}
-
-#logo{
-width:200px;
-float:left;
-text-align:center;}
-
-.linklogo{
-width:200px;
-height:201px;
-text-align:center;
-display: block;
-background: url(images/bey-l.png) center no-repeat;}
-
-.linklogo a{
-margin-left:-1px !important;
-font-size:65px;
-letter-spacing:-5px;
-text-decoration:none;
-display:block;
-padding-top:120px;
-color:#fff !important;
-background:none;}
-
-#logotext{
-margin:20px 0 0 0;}
-
-#logotext ul{
-list-style:none;}
-
-#logotext a:link,#logotext a:visited{
-margin:5px;
-padding:5px;
-display:block;
-font-weight:bold;
-font-size:1.1em;}
-
-#logotext li a:hover,#logotext li a:active{
-color:#fff !important;
-background: #32cd32 url(images/b-link.png) center no-repeat;}
-
-h1, h2, h3{
-font-family:"century gothic", arial, verdana, sans-serif;}
-
-h2 small{
-font-size:.8em;}
-
-h2{
-font-size:1.6em;
-padding:0 0 10px 0;
-margin:0 0 10px 0;}
-
-h3{
-font-size:1.4em;
-border-bottom:1px dotted #fff;
-padding:0 0 5px 0;
-font-weight:normal;
-margin:0 0 10px 0;}
-
-.byline{
-font-style:italic;
-font-size:.9em;
-margin:10px 0 5px 0;}
-
-#content{
-width:550px;
-float:right;
-background:#000;
-color:#B3EDB3;}
-
-#about{
-padding:0px 20px 40px 20px;
-color:#E0F8E0;
-background:#32CD32 url(images/about-blog.png) no-repeat bottom;
-font-size:1.1em;}
-
-#about h2{
-font-size:1.6em;
-padding:0 !important;
-margin:0 0 5px 0 !important;}
-
-#about a:link, #blog a:link{color:#fff;}
-
-#blog{
-margin:0px 0 0 0;
-padding: 0 15px 15px 15px;
-background:#000 url(images/bottom.png) no-repeat bottom;}
-
-#blog p{
-line-height:1.5em;
-margin:0 0 1em 0;}
-
-#top{
-background:url(images/top.png) no-repeat;
-width:550px;
-height:29px;}
-
-#more{
-color:#111;
-font-size:1.1em;
-background:#f5f5f5 url(images/top-more.png) no-repeat top;
-padding:15px 15px 0 15px;}
-
-#bottom{
-width:550px;
-height:20px;
-background:#fff url(images/reallybottom.png) no-repeat;}
-
-.c{clear:both;}
-
-#footer{
-line-height:1.5em;
-margin:40px 20px 20px 270px;}
-
-.hid{display:none;}
+body {
+  background: #FFF;
+  color: #1B1B1B;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#container {
+  margin: 0 auto;
+  width: 800px;
+}
+#header {
+  padding: 0.5em 0 0 0;
+  margin: 0;
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+#content {
+  padding: 0;
+  margin: 0;
+}
+#footer {
+  padding: 0;
+  margin: 0;
+  font-size: 0.7em;
+  text-align: center;
+  border-top: 3px solid #000;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0em;
+  margin-bottom: .25em;
+  font-weight: bold;
+}
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+p {
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+a {
+  color: #095EAE;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#logo a:hover {
+  text-decoration: none;
+}

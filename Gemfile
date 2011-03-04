@@ -1,10 +1,9 @@
-source "http://rubygems.org"
-
+source :rubygems
 gem 'sinatra', '1.2.0'
 gem 'rake'
 gem 'slim'
 
-group :test do 
+group :test do
   gem 'rspec', :require => 'spec'
   gem 'rack-test'
 end

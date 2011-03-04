@@ -1,26 +1,23 @@
-require "rubygems"
-require "bundler/setup"
-require "sinatra"
-
-# load environment
+require 'rubygems'
+require 'bundler/setup'
+require 'sinatra'
 require File.join(File.dirname(__FILE__), 'environment')
 
-# load view folder
-configure do 
+configure do
   set :views, "#{File.dirname(__FILE__)}/views"
 end
 
-error do 
+error do
   e = request.env['sinatra.error']
   Kernel.puts e.backtrace.join("\n")
-  'Application Error'
+  'Application error'
 end
 
-helpers do 
+helpers do
   # add your helpers here
 end
 
-# start page 
-get '/' do 
-  slim :index
+# root page
+get '/' do
+  slim :root
 end

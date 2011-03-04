@@ -1,21 +1,20 @@
-require "rubygems"
-require "bundler/setup"
-require "ostruct"
+require 'rubygems'
+require 'bundler/setup'
 require "slim"
-require "sinatra" unless defined?(Sinatra)
+require 'ostruct'
 
-configure do 
+require 'sinatra' unless defined?(Sinatra)
+
+configure do
   SiteConfig = OpenStruct.new(
-    :title => 'Set title here',
-    :author => 'Set name here',
-    :url_base => 'http://localhost:3000/'
+    :title => 'Your Application Name',
+    :author => 'Your Name',
+    :url_base => 'http://localhost:4567/'
   )
 
-  #load models
-  $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib/models")
-  Dir.glob("#{File.dirname(__FILE__)}/lib/models/*.rb") { |models| require File.basename(models, '.*')}
-
-  # load libraries
+  # load models
   $LOAD_PATH.unshift("#{File.dirname(__FILE__)}/lib")
-  Dir.glob("#{File.dirname(__FILE__)}/lib/*.rb") { |lib| require File.basename(lib, '.*')}
+  Dir.glob("#{File.dirname(__FILE__)}/lib/*.rb") { |lib| require File.basename(lib, '.*') }
+
+
 end

@@ -1,7 +1,9 @@
-require "rubygems"
-require "rspec/core/rake_task"
+require 'rubygems'
+require 'bundler/setup'
+require 'rspec/core/rake_task'
+require 'sinatra/activerecord/rake'
 
-task :default => :test 
+task :default => :test
 task :test => :spec
 
 if !defined?(RSpec)
@@ -14,6 +16,6 @@ else
   end
 end
 
-task :environment do 
+task :environment do
   require File.join(File.dirname(__FILE__), 'environment')
 end
