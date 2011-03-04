@@ -1,5 +1,7 @@
 = Sinatra Application Template
 
+This application template is heavily inspired by https://github.com/zapnap/sinatra-template
+
 A base Sinatra application template. Just fork and build. Yay!
 Includes Bundler, DataMapper, RSpec2, and Slim, all ready to go.
 
@@ -24,5 +26,7 @@ Add your specs in <tt>spec</tt>; just require <tt>spec_helper.rb</tt> to pre-con
   ruby application.rb
 
 == Thanks
+
+  https://github.com/zapnap/sinatra-template
 
 (c) 2011 Julius F. This code is distributed under the MIT license.
