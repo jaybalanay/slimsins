@@ -1,0 +1,11 @@
+doctype html
+html 
+  head 
+    title=@title || #{SiteConfig.title}
+    meta name="author" content="#{SiteConfig.author}"
+    link href='/main.css' rel='stylesheet' type='text/css'
+  body 
+    div#page
+      div#logo
+        h1.linklogo = link_to("#{SiteConfig.title}","#{SiteConfig.url_base}")
+        div#logotext
